@@ -1,0 +1,8 @@
+package sale;
+
+public abstract class Sale 
+{
+	public abstract String getDescription();
+	
+	public abstract double getCost();
+}

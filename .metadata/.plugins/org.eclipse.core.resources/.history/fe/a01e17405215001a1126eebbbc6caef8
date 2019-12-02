@@ -1,0 +1,26 @@
+package decorator;
+import sale.Pastry;
+public class AddHeat extends PastryExtras
+{
+	public AddHeat(Pastry base)
+	{
+		super(base);
+	}
+	
+	/**
+	 * adds Heat to description
+	 */
+	public String getDescription()
+	{
+		return base.getDescription() + "\nAdded: Heat";
+	}
+	
+	/**
+	 * returns cost with added Heat cost
+	 * @return cost
+	 */
+	public double getCost()
+	{
+		return base.getCost() + .50;
+	}
+}
